@@ -1,6 +1,8 @@
 const projects = [
   {
     title: "SenStock",
+    image: "/images/senstock.png",
+    category: "Application Full-Stack",
     description:
       "Application web de gestion de stock permettant de gérer les produits, les mouvements de stock et les alertes de seuil.",
     technologies: ["React", "Laravel", "PostgreSQL", "Tailwind CSS"],
@@ -53,12 +55,20 @@ function Projects() {
               className="group rounded-xl border border-slate-800 bg-slate-900/50 overflow-hidden hover:border-blue-500/50 transition"
             >
               {/* Image temporaire */}
-              <div className="h-48 bg-slate-800 flex items-center justify-center">
-                <span className="text-slate-600">Aperçu du projet</span>
+              <div className="h-48 bg-slate-800 overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={`Capture d'écran de ${project.title}`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                />
               </div>
 
               {/* Contenu */}
               <div className="p-6">
+                <p className="text-blue-500 text-sm font-medium mb-2">
+                  {project.category}
+                </p>
+
                 <h3 className="text-xl font-semibold text-white mb-3">
                   {project.title}
                 </h3>

@@ -1,8 +1,14 @@
 const certifications = [
   {
-    title: "Nom de la certification",
-    organization: "Organisme",
-    year: "2026",
+    title: "Développement mobile",
+    organization: "FORCE-N",
+    year: "2025",
+    link: "#",
+  },
+  {
+    title: "Développement web niveau avancé",
+    organization: "D-CLIC",
+    year: "2025",
     link: "#",
   },
 ];
@@ -17,14 +23,24 @@ function Certifications() {
           <h2 className="text-3xl md:text-4xl font-bold text-white">
             Certifications et formations complémentaires
           </h2>
+
+          <p className="text-slate-400 text-lg leading-relaxed mt-4 max-w-2xl">
+            Des formations et certifications qui complètent mon parcours
+            académique et me permettent de développer continuellement mes
+            compétences techniques.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
           {certifications.map((certification) => (
             <div
               key={certification.title}
-              className="p-6 rounded-xl border border-slate-800 bg-slate-900/50"
+              className="group p-6 rounded-xl border border-slate-800 bg-slate-900/50 hover:border-blue-500/40 hover:-translate-y-1 transition duration-300"
             >
+              <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-blue-500/10 text-blue-500 mb-4">
+                ✓
+              </div>
+
               <h3 className="text-xl font-semibold text-white">
                 {certification.title}
               </h3>

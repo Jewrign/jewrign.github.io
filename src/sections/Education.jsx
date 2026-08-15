@@ -8,20 +8,25 @@ function Education() {
           <h2 className="text-3xl md:text-4xl font-bold text-white">
             Mon parcours académique
           </h2>
+
+          <p className="text-slate-400 text-lg leading-relaxed mt-4 max-w-2xl">
+            Un parcours orienté vers l’informatique, le développement logiciel
+            et la conception de solutions numériques.
+          </p>
         </div>
 
         <div className="max-w-3xl">
           <div className="relative border-l border-slate-700 pl-8">
-            <div className="relative">
+            <div className="relative pb-4">
               <span className="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-blue-600 border-4 border-slate-950" />
 
-              <p className="text-blue-500 font-medium mb-2">2023 — 2026</p>
+              <p className="text-blue-500 font-medium mb-2">2022 — 2026</p>
 
-              <h3 className="text-xl font-semibold text-white">
-                Licence en Informatique
+              <h3 className="text-xl md:text-2xl font-semibold text-white">
+                Licence en Informatique - Spécialité génie logiciel
               </h3>
 
-              <p className="text-slate-400 mt-2">
+              <p className="text-slate-300 mt-2 font-medium">
                 Université Iba Der Thiam de Thiès
               </p>
 
@@ -30,6 +35,24 @@ function Education() {
                 données, les réseaux, la conception logicielle, l'analyse et la
                 modélisation des systèmes informatiques.
               </p>
+
+              <div className="flex flex-wrap gap-2 mt-5">
+                {[
+                  "Programmation",
+                  "Bases de données",
+                  "Génie logiciel",
+                  "Développement web",
+                  "Réseaux",
+                  "UML & Merise",
+                ].map((domain) => (
+                  <span
+                    key={domain}
+                    className="px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700/50 text-slate-300 text-sm"
+                  >
+                    {domain}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>

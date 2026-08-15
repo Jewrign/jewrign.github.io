@@ -6,10 +6,11 @@ import Projects from "./sections/Projects";
 import Education from "./sections/Education";
 import Certifications from "./sections/Certifications";
 import Contact from "./sections/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-900 flex items-center justify-center">
+    <div className="min-h-screen bg-slate-950">
       <Navbar />
 
       <main>
@@ -21,6 +22,7 @@ function App() {
         <Certifications />
         <Contact />
       </main>
+      <Footer />
     </div>
   );
 }
