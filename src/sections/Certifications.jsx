@@ -15,7 +15,7 @@ const certifications = [
 
 function Certifications() {
   return (
-    <section id="certifications" className="py-24">
+    <section id="certifications" className="py-24 border-t border-slate-800/40">
       <div className="max-w-6xl mx-auto px-6">
         <div className="mb-12">
           <p className="text-blue-500 font-medium mb-3">Certifications</p>

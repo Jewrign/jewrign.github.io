@@ -5,23 +5,23 @@ function Hero() {
       className="relative min-h-screen flex items-center overflow-hidden pt-20"
     >
       {/* Éléments décoratifs */}
-      <div className="absolute top-1/4 left-0 w-72 h-72 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-1/4 left-0 w-72 h-72 bg-blue-600/10 rounded-full blur-3xl pointer-events-none animate-pulse" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl pointer-events-none animate-pulse" />
 
       <div className="relative max-w-6xl mx-auto px-6 w-full">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Contenu */}
           <div>
             {/* Domaine */}
-            <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full border border-slate-800 bg-slate-900/70 text-sm text-slate-300 mb-6">
-              <span className="w-2 h-2 rounded-full bg-blue-500" />
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-500/20 bg-blue-500/5 text-sm text-slate-300 mb-6">
+              <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
               Développement logiciel · Full-Stack
             </div>
 
             {/* Présentation */}
             <p className="text-blue-500 font-medium mb-3">Bonjour, je suis</p>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-tight">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-tight drop-shadow-sm">
               Elhadji Alioune Badara
               <span className="text-blue-500"> SENE</span>
             </h1>
@@ -40,7 +40,7 @@ function Hero() {
             <div className="flex flex-wrap gap-4 mt-8">
               <a
                 href="#projects"
-                className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition duration-300"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 hover:-translate-y-0.5 transition duration-300"
               >
                 Voir mes projets
                 <span className="ml-2">→</span>
@@ -50,7 +50,7 @@ function Hero() {
                 href="/CV_Elhadji_SENE.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-slate-700 text-slate-300 font-medium hover:bg-slate-800 hover:text-white transition duration-300"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-slate-700 text-slate-300 font-medium hover:bg-slate-800 hover:text-white hover:-translate-y-0.5 transition duration-300"
               >
                 Télécharger mon CV
               </a>
@@ -86,8 +86,12 @@ function Hero() {
               <div className="absolute -inset-8 rounded-full border border-blue-500/5" />
 
               {/* Photo */}
-              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full border border-blue-500/30 bg-slate-900 flex items-center justify-center overflow-hidden shadow-2xl shadow-blue-950/30">
-                <span className="text-slate-600 text-sm">Votre photo</span>
+              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full border border-blue-500/30 bg-slate-900 flex items-center justify-center overflow-hidden shadow-2xl shadow-blue-950/30 hover:border-blue-500/50 transition duration-500">
+                <img
+                  src="/images/profile.jpg"
+                  alt="Elhadji Alioune Badara SENE"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>

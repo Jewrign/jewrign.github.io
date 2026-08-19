@@ -1,6 +1,9 @@
 function Education() {
   return (
-    <section id="education" className="py-24 bg-slate-900/40">
+    <section
+      id="education"
+      className="py-24 bg-slate-900/40 border-t border-slate-800/40"
+    >
       <div className="max-w-6xl mx-auto px-6">
         <div className="mb-12">
           <p className="text-blue-500 font-medium mb-3">Formation</p>

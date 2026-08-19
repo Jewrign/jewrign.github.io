@@ -11,7 +11,9 @@ const projects = [
   },
 
   {
-    title: "Netlink",
+    title: "CoopManager",
+    image: "/images/coopmanager.png",
+    category: "Application Full-Stack",
     description:
       "Projet académique de conception et de développement d’une solution numérique dans le domaine des services informatiques.",
     technologies: ["React", "Laravel", "MySQL"],
@@ -31,7 +33,7 @@ const projects = [
 
 function Projects() {
   return (
-    <section id="projects" className="py-24">
+    <section id="projects" className="py-24 border-t border-slate-800/40">
       <div className="max-w-6xl mx-auto px-6">
         {/* En-tête */}
         <div className="mb-12">
@@ -47,15 +49,13 @@ function Projects() {
           </p>
         </div>
 
-        {/* Projets */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
             <article
               key={project.title}
-              className="group rounded-xl border border-slate-800 bg-slate-900/50 overflow-hidden hover:border-blue-500/50 transition"
+              className="group rounded-xl border border-slate-800 bg-slate-900/50 overflow-hidden hover:border-blue-500/50 hover:-translate-y-1 transition duration-300"
             >
-              {/* Image temporaire */}
-              <div className="h-48 bg-slate-800 overflow-hidden">
+              <div className="h-52 sm:h-48 bg-slate-800 overflow-hidden">
                 <img
                   src={project.image}
                   alt={`Capture d'écran de ${project.title}`}
@@ -63,7 +63,6 @@ function Projects() {
                 />
               </div>
 
-              {/* Contenu */}
               <div className="p-6">
                 <p className="text-blue-500 text-sm font-medium mb-2">
                   {project.category}

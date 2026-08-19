@@ -1,6 +1,9 @@
 function Contact() {
   return (
-    <section id="contact" className="py-24 bg-slate-900/40">
+    <section
+      id="contact"
+      className="py-24 bg-slate-900/40 border-t border-slate-800/50"
+    >
       <div className="max-w-4xl mx-auto px-6 text-center">
         <p className="text-blue-500 font-medium mb-3">Contact</p>
 
@@ -15,7 +18,7 @@ function Contact() {
 
         <div className="flex flex-wrap justify-center gap-4 mt-8">
           <a
-            href="mailto:tonemail@example.com"
+            href="mailto:aliounebadarasene929@gmail.com"
             className="px-6 py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition"
           >
             Me contacter
@@ -29,7 +32,18 @@ function Contact() {
           >
             GitHub
           </a>
+          <a
+            href="TON_LIEN_LINKEDIN"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 rounded-lg border border-slate-700 text-slate-300 hover:bg-slate-800 hover:text-white transition"
+          >
+            LinkedIn
+          </a>
         </div>
+        <p className="text-slate-500 text-sm mt-6">
+          Basé au Sénégal · Développement logiciel · Full-Stack
+        </p>
       </div>
     </section>
   );
