@@ -18,9 +18,9 @@ function Navbar() {
             className="text-xl font-bold text-white tracking-tight hover:text-slate-200 transition"
           >
             <img
-              src="../../public/images/web-design.png"
+              src="/images/web-design.png"
               alt="logo du site"
-              className="w-20"
+              className="w-10 h-10 rounded-full object-cover"
             />
           </a>
 
