@@ -17,7 +17,11 @@ function Navbar() {
             onClick={closeMenu}
             className="text-xl font-bold text-white tracking-tight hover:text-slate-200 transition"
           >
-            Jewrign<span className="text-blue-500">.</span>
+            <img
+              src="../../public/images/web-design.png"
+              alt="logo du site"
+              className="w-20"
+            />
           </a>
 
           {/* Navigation Desktop */}
