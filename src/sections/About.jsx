@@ -43,13 +43,13 @@ function About() {
             </p>
 
             <p>
-              Je souhaite aujourd’hui poursuivre mes études en
-              <span className="text-white font-medium"> Master</span> afin
-              d’approfondir mes connaissances en ingénierie logicielle,
-              architecture des systèmes et développement de solutions
-              informatiques. Mon objectif est de consolider mes compétences
-              techniques et méthodologiques pour être capable de concevoir des
-              applications fiables, maintenables et adaptées aux besoins réels.
+              Je souhaite aujourd'hui poursuivre mes études en Master afin
+              d'approfondir mes connaissances en ingénierie logicielle et
+              d'acquérir une expertise en intelligence artificielle, un domaine
+              que je considère comme une évolution naturelle et stratégique du
+              développement logiciel. Mon objectif est de consolider mes
+              compétences techniques et méthodologiques pour concevoir des
+              applications intelligentes, fiables et évolutives.
             </p>
           </div>
 
@@ -57,9 +57,10 @@ function About() {
             <p className="text-blue-500 font-medium mb-2">Mon objectif</p>
 
             <p className="text-slate-300 leading-relaxed">
-              Poursuivre mon parcours académique en Master tout en continuant à
-              développer des projets concrets afin de renforcer mon expertise en
-              développement logiciel et en architecture applicative.
+              Poursuivre mon parcours académique en Master d'Ingénierie
+              Logicielle et Intelligence Artificielle, tout en continuant à
+              développer des projets concrets, afin de conjuguer rigueur du
+              génie logiciel et compétences en apprentissage automatique.
             </p>
           </div>
         </div>

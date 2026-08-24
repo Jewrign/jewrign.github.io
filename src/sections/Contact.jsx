@@ -33,7 +33,7 @@ function Contact() {
             GitHub
           </a>
           <a
-            href="TON_LIEN_LINKEDIN"
+            href="https://linkedin.com/in/elh-alioune-badara-sene-34b016260"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-lg border border-slate-700 text-slate-300 hover:bg-slate-800 hover:text-white transition"

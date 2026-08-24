@@ -15,17 +15,20 @@ const projects = [
     image: "/images/coopmanager.png",
     category: "Application Full-Stack",
     description:
-      "Projet académique de conception et de développement d’une solution numérique dans le domaine des services informatiques.",
-    technologies: ["React", "Laravel", "MySQL"],
+      "Projet académique de conception et de développement d’une solution numérique de gestion des convention pour notre université.",
+    technologies: ["React", "Laravel", "MySQL", "Docker"],
     github: "https://github.com/Jewrign",
     demo: null,
   },
 
   {
     title: "Gestionnaire de tâches",
+    image: "/images/sentask.png",
+    category: "Application mobile",
+    imageFit: "contain",
     description:
       "Application permettant de créer, organiser, modifier et supprimer des tâches à travers une interface simple.",
-    technologies: ["JavaScript", "HTML", "CSS"],
+    technologies: ["Flutter", "Strapi", "SQLite", "Javascript"],
     github: "https://github.com/Jewrign",
     demo: null,
   },
@@ -59,7 +62,11 @@ function Projects() {
                 <img
                   src={project.image}
                   alt={`Capture d'écran de ${project.title}`}
-                  className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                  className={`w-full h-full ${
+                    project.imageFit === "contain"
+                      ? "object-contain p-4"
+                      : "object-cover"
+                  } group-hover:scale-105 transition duration-500`}
                 />
               </div>
 

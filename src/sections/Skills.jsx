@@ -5,6 +5,11 @@ const skills = [
     technologies: ["React.js", "JavaScript", "HTML5", "CSS3", "Tailwind CSS"],
   },
   {
+    category: "Mobile",
+    icon: "▤",
+    technologies: ["Flutter", "Dart"],
+  },
+  {
     category: "Backend",
     icon: "</>",
     technologies: ["Laravel", "PHP", "Node.js", "Express.js"],

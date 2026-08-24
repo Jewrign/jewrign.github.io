@@ -47,6 +47,7 @@ function Education() {
                   "Développement web",
                   "Réseaux",
                   "UML & Merise",
+                  "Gestion de projets agiles",
                 ].map((domain) => (
                   <span
                     key={domain}

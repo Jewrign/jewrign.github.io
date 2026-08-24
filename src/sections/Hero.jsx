@@ -9,7 +9,7 @@ function Hero() {
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl pointer-events-none animate-pulse" />
 
       <div className="relative max-w-6xl mx-auto px-6 w-full">
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="max-w-3xl">
           {/* Contenu */}
           <div>
             {/* Domaine */}
@@ -31,7 +31,7 @@ function Hero() {
             </h2>
 
             <p className="text-slate-400 text-lg leading-relaxed mt-6 max-w-xl">
-              Je conçois et développe des applications web modernes, de
+              Je conçois et développe des applications web/mobiles modernes, de
               l'interface utilisateur jusqu'à l'API et la base de données, avec
               des technologies comme React et Laravel.
             </p>
@@ -75,24 +75,6 @@ function Hero() {
               >
                 Contact
               </a>
-            </div>
-          </div>
-
-          {/* Emplacement photo */}
-          <div className="flex justify-center md:justify-end">
-            <div className="relative">
-              {/* Cercle décoratif */}
-              <div className="absolute -inset-4 rounded-full border border-blue-500/10" />
-              <div className="absolute -inset-8 rounded-full border border-blue-500/5" />
-
-              {/* Photo */}
-              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full border border-blue-500/30 bg-slate-900 flex items-center justify-center overflow-hidden shadow-2xl shadow-blue-950/30 hover:border-blue-500/50 transition duration-500">
-                <img
-                  src="/images/profile.jpg"
-                  alt="Elhadji Alioune Badara SENE"
-                  className="w-full h-full object-cover"
-                />
-              </div>
             </div>
           </div>
         </div>
